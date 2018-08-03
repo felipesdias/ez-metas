@@ -1,0 +1,4 @@
+quasar build -m cordova -T android
+cd ./src-cordova/platforms/android/build/outputs/apk/release
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore my-release-key.keystore android-release-unsigned.apk alias_name
+zipalign -v 4 android-release-unsigned.apk Metas2.3.0.apk

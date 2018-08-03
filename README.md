@@ -1,1 +1,3 @@
-# ez-metas
+# Quasar App
+
+> WIP
